@@ -58,7 +58,7 @@ void floyd_warshall(int graph[V][V])
 
     //Print Shortest Path Graph
     //(Values printed as INT_MAX defines there is no path)
-    for (int i = 1;i < V;++i)
+    for (int i = 0;i < V;++i) # i should start from 0 instead of 1
     {
         for (int j = 0;j < V;++j)
             cout << i << " to " << j << " distance is " << dist[i][j] << "\n";
